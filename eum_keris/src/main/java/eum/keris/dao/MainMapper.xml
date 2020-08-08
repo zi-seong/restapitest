@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+
+ 
+ 
+<mapper namespace="eum.keris.dao.MainMapper">
+	
+ 	<resultMap type="eum.keris.vo.LessonVo" id="lessonResultMap">
+		<result column="lesson_plan_seq" property="lessonPlanSeq"/>
+		<result column="schul_cd" property="schulCd"/>
+		<result column="high_plan_seq" property="highPlanSeq"/>
+		<result column="year_cd" property="yearCd"/>
+		<result column="grade_cd" property="gradeCd"/>
+		<result column="term_cd" property="termCd"/>
+		<result column="subject_cd" property="subjectCd"/>
+		<result column="subject_sort_num" property="subjectSortNum"/>
+		<result column="local_cd" property="localCd"/>
+		<result column="publisher_cd" property="publisherCd"/>
+		<result column="publisher_sort_num" property="publisherSortNum"/>
+		<result column="lesson_type_cd" property="lessonTypeCd"/>
+		<result column="stat_cd" property="statCd"/>
+		<result column="reg_id" property="regId"/>
+		<result column="reg_date" property="regDate"/>
+		<result column="edit_id" property="editId"/>
+		<result column="edit_date" property="editDate"/>
+		<result column="nonsubject_yn" property="nonsubjectYn"/>
+		<result column="free_yn" property="freeYn"/>
+		<result column="subject_cd_en" property="subjectCdEn"/>
+		<result column="subject_cd_zh" property="subjectCdZh"/>
+		<result column="subject_cd_ja" property="subjectCdJa"/>
+	</resultMap>
+	
+	<resultMap type="eum.keris.vo.ChasiVo" id="chasiResultMap">
+		<result column="chasi_plan_seq" property="chasiPlanSeq"/>
+		<result column="lesson_plan_seq" property="lessonPlanSeq"/>
+		<result column="chasi_cd" property="chasiCd"/>
+		<result column="group_chasi_plan_seq" property="groupChasiPlanSeq"/>
+		<result column="user_id" property="userId"/>
+		<result column="my_lesson_yn" property="myLessonYn"/>
+		<result column="chasi_name" property="chasiName"/>
+		<result column="chasi_sort_num" property="chasiSortNum"/>
+		<result column="chasi_desc" property="chasiDesc"/>
+		<result column="chasi_memo" property="chasiMemo"/>
+		<result column="chasi_type_cd" property="chasiTypeCd"/>
+		<result column="page_num_info1" property="pageNumInfo1"/>
+		<result column="chasi_year_cd" property="chasiYearCd"/>
+		<result column="chasi_icon_cd" property="chasiIconCd"/>
+		<result column="service_cd" property="serviceCd"/>
+		<result column="chasi_func" property="chasiFunc"/>
+		<result column="open_yn" property="openYn"/>
+		<result column="stat_cd" property="statCd"/>
+		<result column="reg_id" property="regId"/>
+		<result column="reg_date" property="regDate"/>
+		<result column="edit_id" property="editId"/>
+		<result column="edit_date" property="editDate"/>
+		<result column="unit01_seq" property="unit01Seq"/>
+		<result column="unit02_seq" property="unit02Seq"/>
+		<result column="unit03_seq" property="unit03Seq"/>
+		<result column="tag" property="tag"/>
+	</resultMap>
+	
+	<resultMap type="eum.keris.vo.LearningMapVo" id="learningMapResultMap">
+		<result column="schul_cd" property="schulCd"/>
+		<result column="grade_cd" property="gradeCd"/>
+		<result column="subject_cd" property="subjectCd"/>
+		<result column="unit01_seq" property="unit01Seq"/>
+		<result column="unit02_seq" property="unit02Seq"/>
+		<result column="unit03_seq" property="unit03Seq"/>
+		<result column="unit01_name" property="unit01Name"/>
+		<result column="unit02_name" property="unit02Name"/>
+		<result column="unit03_name" property="unit03Name"/>
+		<result column="chasi_name" property="chasiName"/>
+		<result column="tag" property="tag"/>
+	</resultMap>
+	 
+	
+<!-- 	<select id="selectAllLesson" resultMap="lessonResultMap">
+		SELECT lesson_plan_seq, schul_cd FROM lcms_lesson_plan
+	</select>
+	
+	<select id="selectOneLesson" parameterType="int" resultMap="lessonResultMap">
+		SELECT * FROM lcms_lesson_plan WHERE lesson_plan_seq = #{lessonPlanSeq}
+	</select> -->
+	
+	<select id="searchKeyword" parameterType="string" resultType="string">
+		select c.tag 
+		from lcms_lesson_plan b1
+			, lcms_lesson_plan b2
+			, lcms_chasi_plan c
+			left outer join lcms_chasi_plan u1 on u1.chasi_plan_seq = c.unit01_seq
+			left outer join lcms_chasi_plan u2 on u2.chasi_plan_seq = c.unit02_seq
+			left outer join lcms_chasi_plan u3 on u3.chasi_plan_seq = c.unit03_seq
+		where b1.lesson_type_cd = 'SUBJ'
+			and b1.nonsubject_yn = 'N' 
+			and not b1.lesson_plan_seq in(153948, 153918, 153701, 153696, 164860, 224833, 224915, 224997, 224751)
+			and b1.subject_cd <![CDATA[ <> ]]> '[개정 전 교과]'
+			and b1.stat_cd = 'C9999'
+			and b2.high_plan_seq = b1.lesson_plan_seq
+			and b2.lesson_type_cd in ('PUBLIC','LOCA')
+			and b2.subject_cd <![CDATA[ <> ]]>  '[개정 전 교과]'
+			and b2.stat_cd = 'C9999'
+			and b2.lesson_plan_seq = c.lesson_plan_seq
+			and c.user_id is null
+			and c.stat_cd = 'C9999'
+			and c.tag like concat('%', #{searchKeyword}, '%')
+			LIMIT 1
+	</select>
+	
+	
+
+	
+	 <select id="searchLearningMap" parameterType="string" resultMap="learningMapResultMap">
+		select b2.schul_cd, b2.grade_cd, b2.subject_cd, c.unit01_seq, c.unit02_seq, c.unit03_seq, u1.chasi_name as unit01_name, u2.chasi_name as unit02_name, u3.chasi_name as unit03_name, c.chasi_name, c.tag
+		from lcms_lesson_plan b1
+		     , lcms_lesson_plan b2
+		     , lcms_chasi_plan c
+		     left outer join lcms_chasi_plan u1 on u1.chasi_plan_seq = c.unit01_seq
+		     left outer join lcms_chasi_plan u2 on u2.chasi_plan_seq = c.unit02_seq
+		     left outer join lcms_chasi_plan u3 on u3.chasi_plan_seq = c.unit03_seq
+		where b1.lesson_type_cd = 'SUBJ'
+			   and b1.nonsubject_yn = 'N' 
+			   and not b1.lesson_plan_seq in(153948, 153918, 153701, 153696, 164860, 224833, 224915, 224997, 224751)
+			   and b1.subject_cd <![CDATA[ <> ]]> '[개정 전 교과]'
+			   and b1.stat_cd = 'C9999'
+			   and b2.high_plan_seq = b1.lesson_plan_seq
+			   and b2.lesson_type_cd in ('PUBLIC','LOCA')
+			   and b2.subject_cd <![CDATA[ <> ]]> '[개정 전 교과]'
+			   and b2.stat_cd = 'C9999'
+			   and b2.lesson_plan_seq = c.lesson_plan_seq
+			   and c.user_id is null
+			   and c.stat_cd = 'C9999'
+			   and c.tag like concat('%', #{searchKeyword}, '%')
+		order by b2.schul_cd asc, b2.grade_cd asc, b2.subject_cd asc, unit01_name asc, unit02_name asc, unit03_name asc
+	</select> 
+</mapper>
+

@@ -1,0 +1,58 @@
+<rdf:RDF
+    xmlns:nlfloc="http://lod.nl.go.kr/foreignLocation/"
+    xmlns:nlcon="http://lod.nl.go.kr/countries/"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:nllib="http://lod.nl.go.kr/library/"
+    xmlns:nlsc="http://lod.nl.go.kr/scheme/"
+    xmlns:nlloc="http://lod.nl.go.kr/location/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:kdata="http://data.kdata.kr/resource/"
+    xmlns:bibframe="http://bibframe.org/vocab/"
+    xmlns:units="http://lod.nl.go.kr/units/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:nlgov="http://lod.nl.go.kr/government/"
+    xmlns:nlon="http://lod.nl.go.kr/ontology/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:nlddc="http://lod.nl.go.kr/ddc/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:schema="http://schema.org/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:countries="http://data.kdata.kr/countries/"
+    xmlns:nluv="http://lod.nl.go.kr/university/"
+    xmlns:nls="http://lod.nl.go.kr/subject/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:adsec="http://data.kdata.kr/administrative_section/"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:nla="http://lod.nl.go.kr/author/"
+    xmlns:nlkdc="http://lod.nl.go.kr/kdc/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:nlk="http://lod.nl.go.kr/resource/" > 
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/CNTS-00061060400">
+    <bibframe:extent>10 p</bibframe:extent>
+    <bibo:volume>2011</bibo:volume>
+    <dc:creator>조천중학교</dc:creator>
+    <dc:format>application/kor.vnd.hancom-hwp</dc:format>
+    <dc:publisher>제주시교육지원청</dc:publisher>
+    <dcterms:accessRights rdf:resource="http://lod.nl.go.kr/resource/license2"/>
+    <dcterms:description>수집기관: 제주시교육지원청 (http://www.jjse.go.kr/)</dcterms:description>
+    <dcterms:identifier>http://www.jjse.go.kr/bbs/board.php?bo_name=jang_66&amp;wr_id=331&amp;page=48</dcterms:identifier>
+    <dcterms:title>기술·가정과 수업안</dcterms:title>
+    <nlon:antecedentSource>born digital</nlon:antecedentSource>
+    <nlon:audienceNote>일반이용자</nlon:audienceNote>
+    <nlon:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-16T02:58:35</nlon:datePublished>
+    <nlon:genre>일반도서</nlon:genre>
+    <nlon:holdingInstitution>국립중앙도서관</nlon:holdingInstitution>
+    <nlon:kdc>376.5</nlon:kdc>
+    <nlon:kdcn rdf:resource="http://lod.nl.go.kr/kdc/376_e5"/>
+    <nlon:medium>전자자료(Vendor)</nlon:medium>
+    <nlon:newsTopic>가정 학습[家庭學習]</nlon:newsTopic>
+    <nlon:publicationPlace>제주</nlon:publicationPlace>
+    <nlon:publicationPlace>한국</nlon:publicationPlace>
+    <nlon:remainderOfTitle>식품의 선택과 보관</nlon:remainderOfTitle>
+    <nlon:typeOfResource rdf:resource="http://lod.nl.go.kr/resource/text"/>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/ElectronicBook"/>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterial"/>
+    <rdfs:label>기술·가정과 수업안</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

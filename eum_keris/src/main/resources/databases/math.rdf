@@ -1,0 +1,67 @@
+<rdf:RDF
+    xmlns:nlfloc="http://lod.nl.go.kr/foreignLocation/"
+    xmlns:nlcon="http://lod.nl.go.kr/countries/"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:nllib="http://lod.nl.go.kr/library/"
+    xmlns:nlsc="http://lod.nl.go.kr/scheme/"
+    xmlns:nlloc="http://lod.nl.go.kr/location/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:kdata="http://data.kdata.kr/resource/"
+    xmlns:bibframe="http://bibframe.org/vocab/"
+    xmlns:units="http://lod.nl.go.kr/units/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:nlgov="http://lod.nl.go.kr/government/"
+    xmlns:nlon="http://lod.nl.go.kr/ontology/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:nlddc="http://lod.nl.go.kr/ddc/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:schema="http://schema.org/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:countries="http://data.kdata.kr/countries/"
+    xmlns:nluv="http://lod.nl.go.kr/university/"
+    xmlns:nls="http://lod.nl.go.kr/subject/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:adsec="http://data.kdata.kr/administrative_section/"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:nla="http://lod.nl.go.kr/author/"
+    xmlns:nlkdc="http://lod.nl.go.kr/kdc/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:nlk="http://lod.nl.go.kr/resource/" > 
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/KJU200904394">
+    <bibframe:extent>23 cm</bibframe:extent>
+    <bibframe:extent>479 p</bibframe:extent>
+    <bibframe:extent>삽화, 도표</bibframe:extent>
+    <bibo:edition>總改訂 第43版</bibo:edition>
+    <bibo:isbn>9788988399514(하)</bibo:isbn>
+    <dc:creator>홍성대</dc:creator>
+    <dc:publisher>성지출판</dc:publisher>
+    <dcterms:alternative>기본 수학의 정석</dcterms:alternative>
+    <dcterms:alternative>수학(하)</dcterms:alternative>
+    <dcterms:alternative>판권기표제</dcterms:alternative>
+    <dcterms:description>색인수록</dcterms:description>
+    <dcterms:issued>2009</dcterms:issued>
+    <dcterms:subject rdf:resource="http://lod.nl.go.kr/resource/KSH00341596"/>
+    <dcterms:subject rdf:resource="http://lod.nl.go.kr/resource/KSH00362983"/>
+    <dcterms:title>수학의 정석</dcterms:title>
+    <nlon:classificationNumberOfNLK>410</nlon:classificationNumberOfNLK>
+    <nlon:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-11-11T11:27:16</nlon:datePublished>
+    <nlon:editionOfKDC>4</nlon:editionOfKDC>
+    <nlon:issuedYear>2009</nlon:issuedYear>
+    <nlon:itemNumberOfNLK>9-71</nlon:itemNumberOfNLK>
+    <nlon:kdc>410</nlon:kdc>
+    <nlon:kdcn rdf:resource="http://lod.nl.go.kr/kdc/410_e4"/>
+    <nlon:localHolding>JU467748</nlon:localHolding>
+    <nlon:localHolding>JU467749, 2, HT</nlon:localHolding>
+    <nlon:publicationPlace>서울</nlon:publicationPlace>
+    <nlon:remainderOfTitle>기본편</nlon:remainderOfTitle>
+    <nlon:remainderOfTitle>수학(하)</nlon:remainderOfTitle>
+    <nlon:titleOfSeries>수학의 정석 시리즈</nlon:titleOfSeries>
+    <nlon:typeOfData rdf:resource="http://lod.nl.go.kr/resource/dt_hr"/>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/Book"/>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OfflineMaterial"/>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+    <rdfs:label>수학의 정석 / 洪性大 著</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://book.naver.com/bookdb/book_detail.php?bid=5264736"/>
+  </rdf:Description>
+</rdf:RDF>

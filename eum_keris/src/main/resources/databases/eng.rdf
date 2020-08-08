@@ -1,0 +1,64 @@
+<rdf:RDF
+    xmlns:nlfloc="http://lod.nl.go.kr/foreignLocation/"
+    xmlns:nlcon="http://lod.nl.go.kr/countries/"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:nllib="http://lod.nl.go.kr/library/"
+    xmlns:nlsc="http://lod.nl.go.kr/scheme/"
+    xmlns:nlloc="http://lod.nl.go.kr/location/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:kdata="http://data.kdata.kr/resource/"
+    xmlns:bibframe="http://bibframe.org/vocab/"
+    xmlns:units="http://lod.nl.go.kr/units/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:nlgov="http://lod.nl.go.kr/government/"
+    xmlns:nlon="http://lod.nl.go.kr/ontology/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:nlddc="http://lod.nl.go.kr/ddc/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:schema="http://schema.org/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:countries="http://data.kdata.kr/countries/"
+    xmlns:nluv="http://lod.nl.go.kr/university/"
+    xmlns:nls="http://lod.nl.go.kr/subject/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:adsec="http://data.kdata.kr/administrative_section/"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:nla="http://lod.nl.go.kr/author/"
+    xmlns:nlkdc="http://lod.nl.go.kr/kdc/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:nlk="http://lod.nl.go.kr/resource/" > 
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/KMO201913346">
+    <bibframe:extent>26 cm</bibframe:extent>
+    <bibframe:extent>316 p</bibframe:extent>
+    <bibframe:extent>천연색삽화</bibframe:extent>
+    <bibo:isbn>9791196566500</bibo:isbn>
+    <dc:creator>장시영</dc:creator>
+    <dc:publisher>Beyond knowledge(비얀드 나리지)</dc:publisher>
+    <dcterms:alternative>Yeongeo ui jeongseok</dcterms:alternative>
+    <dcterms:description>Standard of English</dcterms:description>
+    <dcterms:issued>2019</dcterms:issued>
+    <dcterms:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <dcterms:language rdf:resource="http://id.loc.gov/vocabulary/languages/kor"/>
+    <dcterms:subject rdf:resource="http://lod.nl.go.kr/resource/KSH00250278"/>
+    <dcterms:title>영어의 정석</dcterms:title>
+    <nlon:cip>CIP2019000153</nlon:cip>
+    <nlon:classificationNumberOfNLK>740.7</nlon:classificationNumberOfNLK>
+    <nlon:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-11-11T11:27:16</nlon:datePublished>
+    <nlon:ddc>420.7</nlon:ddc>
+    <nlon:editionOfDDC>23</nlon:editionOfDDC>
+    <nlon:editionOfKDC>6</nlon:editionOfKDC>
+    <nlon:issuedYear>2019</nlon:issuedYear>
+    <nlon:itemNumberOfNLK>19-18</nlon:itemNumberOfNLK>
+    <nlon:kdc>740.7</nlon:kdc>
+    <nlon:languageNote>본문은 한국어, 영어가 혼합수록됨</nlon:languageNote>
+    <nlon:localHolding>EM7240719</nlon:localHolding>
+    <nlon:localHolding>EM7240720, 2</nlon:localHolding>
+    <nlon:publicationPlace>서울</nlon:publicationPlace>
+    <nlon:typeOfData rdf:resource="http://lod.nl.go.kr/resource/dt_gm"/>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/Book"/>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OfflineMaterial"/>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+    <rdfs:label>영어의 정석 / 장시영 著</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

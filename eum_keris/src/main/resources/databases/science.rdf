@@ -1,0 +1,66 @@
+<rdf:RDF
+    xmlns:nlfloc="http://lod.nl.go.kr/foreignLocation/"
+    xmlns:nlcon="http://lod.nl.go.kr/countries/"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:nllib="http://lod.nl.go.kr/library/"
+    xmlns:nlsc="http://lod.nl.go.kr/scheme/"
+    xmlns:nlloc="http://lod.nl.go.kr/location/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:kdata="http://data.kdata.kr/resource/"
+    xmlns:bibframe="http://bibframe.org/vocab/"
+    xmlns:units="http://lod.nl.go.kr/units/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:nlgov="http://lod.nl.go.kr/government/"
+    xmlns:nlon="http://lod.nl.go.kr/ontology/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:nlddc="http://lod.nl.go.kr/ddc/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:schema="http://schema.org/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:countries="http://data.kdata.kr/countries/"
+    xmlns:nluv="http://lod.nl.go.kr/university/"
+    xmlns:nls="http://lod.nl.go.kr/subject/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:adsec="http://data.kdata.kr/administrative_section/"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:nla="http://lod.nl.go.kr/author/"
+    xmlns:nlkdc="http://lod.nl.go.kr/kdc/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:nlk="http://lod.nl.go.kr/resource/" > 
+  <rdf:Description rdf:about="http://lod.nl.go.kr/resource/CNTS-00077615678">
+    <bibframe:extent>36p.: 색채삽도; 26cm</bibframe:extent>
+    <bibo:isbn>899181901X</bibo:isbn>
+    <dc:creator>McNulty, Faith</dc:creator>
+    <dc:creator>Simont, Marc</dc:creator>
+    <dc:creator>맥널티, 페이스</dc:creator>
+    <dc:creator>박정선</dc:creator>
+    <dc:creator>시몽, 마르크</dc:creator>
+    <dc:publisher>서돌</dc:publisher>
+    <dcterms:accessRights rdf:resource="http://lod.nl.go.kr/resource/license3"/>
+    <dcterms:alternative>How to dig a hole to the other side of the world</dcterms:alternative>
+    <dcterms:creator rdf:resource="http://lod.nl.go.kr/resource/KAC200002672"/>
+    <dcterms:creator rdf:resource="http://lod.nl.go.kr/resource/KAC200602212"/>
+    <dcterms:description>McNulty, Faith</dcterms:description>
+    <dcterms:description>Simont, Marc</dcterms:description>
+    <dcterms:hasFormat rdf:resource="http://lod.nl.go.kr/resource/KJU200511468"/>
+    <dcterms:issued>2005</dcterms:issued>
+    <dcterms:language rdf:resource="http://lod.nl.go.kr/countries/KOR"/>
+    <dcterms:title>지구 반대쪽까지 구멍을 뚫고 가 보자</dcterms:title>
+    <nlon:audienceNote>아동용</nlon:audienceNote>
+    <nlon:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-16T08:56:57</nlon:datePublished>
+    <nlon:genre>일반도서</nlon:genre>
+    <nlon:kdc>451</nlon:kdc>
+    <nlon:kdcn rdf:resource="http://lod.nl.go.kr/kdc/451_e4"/>
+    <nlon:keyword>과학그림책</nlon:keyword>
+    <nlon:publicationPlace>서울</nlon:publicationPlace>
+    <nlon:titleOfSeries>서돌 과학 그림책; 03</nlon:titleOfSeries>
+    <nlon:typeOfResource rdf:resource="http://lod.nl.go.kr/resource/text"/>
+    <nlon:uci>G701:B-00077615678</nlon:uci>
+    <nlon:uniformTitleOfSeries>서돌 과학 그림책; 03</nlon:uniformTitleOfSeries>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/ElectronicBook"/>
+    <rdf:type rdf:resource="http://lod.nl.go.kr/ontology/OnlineMaterial"/>
+    <rdfs:label>지구 반대쪽까지 구멍을 뚫고 가 보자</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://book.naver.com/bookdb/book_detail.php?bid=1939042"/>
+  </rdf:Description>
+</rdf:RDF>
